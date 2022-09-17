@@ -1,0 +1,100 @@
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+
+
+        <div class = "container">
+        <h1 class=" text-success text-center"> Wecome! Login here</h1><br>
+            <div class = "col-lg-8 m-auto d-block">
+                <form action = # onsubmit= "validation()">
+                    <div class="form-gruop">
+
+                        <label>Username</label>
+                        <input type="text" name="user" class="form-control" id="user"></input>
+                        <span id="username" class="text-danger font-weight-bold"></span>
+                    </div>
+
+                    <div class="form-gruop">
+
+                        <label>Mobile Number</label>
+                        <input type="text" name="mobileNumber" class="form-control" id="mobile"></input>
+                        <span id="mobileNumber" class="text-danger font-weight-bold"></span>
+                    </div>
+
+                    <div class="form-gruop">
+
+                        <label>Password</label>
+                        <input type="password" name="password" class="form-control" id="password"></input>
+                        <span id="pwd" class="text-danger font-weight-bold"></span>
+                    </div>
+
+
+                    <div class="form-gruop">
+
+                        <label>Confirm Password</label>
+                        <input type="password" name="password" class="form-control" id="cpassword"></input>
+                        <span id="pwd1" class="text-danger font-weight-bold"></span>
+                    </div><br>
+
+                    <input type="submit" name="submit" value="submit" class="btn btn-success"></input>
+
+
+                </form>
+            </div>
+        
+        </div>
+
+        <script type="text/javascript">
+
+        function validation(){
+            var user = document.getElementById("user").value;
+            var mobile = document.getElementById("mobile").value;
+            var password = document.getElementById("password").value;
+            var conifrmPassword = document.getElementById("cpassword").value;
+
+            if (user == ""){
+                document.getElementById("username").innerHTML = "Please Enter the Username";
+                
+            return false; 
+            }
+            if(mobile == ""){
+                document.getElementById("mobileNumber").innerHTML = "Please Enter the Mobile Number";
+                console.log("hello")
+            return false; 
+            }
+            
+            if (password == ""){
+                document.getElementById("pwd").innerHTML = "Please Enter the Password";
+            return false;
+            }
+
+            if (conifrmPassword == ""){
+                document.getElementById("pwd1").innerHTML = "Please Enter the Confirm Password";
+            return false;
+            }
+
+        }
+        
+        </script>
+    </body>
+</html>
