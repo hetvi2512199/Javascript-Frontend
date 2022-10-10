@@ -9,6 +9,10 @@ import TestOne from './PropsInclass';
 import App from './App';
 import App1 from './ComponentWillMount';
 import App2 from './ComponentDidUpdate';
+import Test1 from './Hooks';
+import App4 from './usestate';
+import App5 from './useEffect';
+import Rendering from './ConditionalRendering';
 
 ReactDOM.render(
 
@@ -27,6 +31,15 @@ ReactDOM.render(
 
     <App1 />
     <App2 />
+    <Test1 />
+
+    <App4 />
+
+    <App5 />
+
+
+    <Rendering />
+
   </>,document.getElementById("root")
 );
 
