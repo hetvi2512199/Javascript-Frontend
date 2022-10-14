@@ -14,6 +14,7 @@ function Developer(props){
                 )
                 )}
             </ul>
+            <h3>{props.joinedhours?"Joined 1 month ago":"Joining"}</h3>
         </div>
     )
 }

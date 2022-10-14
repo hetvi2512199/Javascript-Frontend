@@ -9,10 +9,15 @@ function App() {
 
   const skills = ["Django","React","Angular"]
 
+  const date = "13 Aug 2022"
+  const currentDate = new Date(date);
+
+  const joinedDate = new Date(currentDate.getFullYear(),currentDate.getMonth()-1)
+
   return (
     <div className="App">
 
-        <Developer logo={demoImage} isOnline={isOnline} name="Hetvi Vyas" role="Python developer"  skills={skills}/>
+        <Developer logo={demoImage} isOnline={isOnline} name="Hetvi Vyas" role="Python developer"  skills={skills} joinedhours={joinedDate}/>
 
     </div>
   );
